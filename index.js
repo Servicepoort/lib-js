@@ -1,5 +1,3 @@
-const test = () => {
-    process.stdout.write('Proof of concept');
+module.exports = {
+    debug: require(__dirname + '/debug'),
 }
-
-module.exports = { test }
