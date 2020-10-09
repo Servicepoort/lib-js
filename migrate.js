@@ -72,6 +72,6 @@ module.exports = async (sequelize, MigrationModel, migrationDir) => {
 
     await sequelize.close();
 
-    process.exit(ok ? 0 : 1);
+    return ok;
 
 };
