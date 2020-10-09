@@ -15,6 +15,10 @@ module.exports = async (sequelize, MigrationModel, migrationDir) => {
 
     let ok = true;
 
+    if (!migrationDir.match(/\/$/)) {
+        migrationDir += '/';
+    }
+
     for (let file of fs.readdirSync(migrationDir)) {
         if (file === 'init.sql') continue;
 
