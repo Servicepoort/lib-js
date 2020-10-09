@@ -1,0 +1,11 @@
+{
+  "name": "compaan-js-lib",
+  "version": "1.0.0",
+  "description": "Compaan JS Library\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[C\u001b[3~l\u001b[2~i\u001b[2~brary\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~\u001b[2~\u001b[\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~library  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
