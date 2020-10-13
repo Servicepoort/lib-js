@@ -12,8 +12,8 @@ const run = (cmd, args, options = {}) => {
 
         const log = (key, func) => {
             return (data) => {
-                info[key].push(data);
-                func(data);
+                info[key].push(data.toString());
+                func(data.toString());
             }
         }
 
@@ -27,9 +27,9 @@ const run = (cmd, args, options = {}) => {
 
         command.stderr.on('close', code => {
             if (code) {
-                reject({ code, err: info.err });
+                reject({ code, err: info.err.join('') });
             } else {
-                resolve(info.out);
+                resolve(info.out.join(''));
             }
         });
     });
