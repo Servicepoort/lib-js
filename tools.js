@@ -23,4 +23,9 @@ const setObjectPath = (object, path, value, create = true) => {
     handle[path.slice(-1)[0]] = value;
 }
 
-module.exports = { setObjectPath }
+const camelToSnake = (str) => str.replace(/[A-Z]/g, pat => '_' + pat.toLowerCase());
+const snakeToCamel = (str) => str.replace(/(_[a-z])/g, pat => pat.substr(1).toUpperCase());
+const ucFirst = (str) => str.substr(0, 1).toUpperCase() + str.substr(1);
+
+module.exports = { setObjectPath, camelToSnake, snakeToCamel, ucFirst }
+
