@@ -70,7 +70,10 @@ const getObjectPathEditor = (object) => {
                 deleteObjectPath(object, paths, ignore);
             }
             return this;
-        }
+        },
+        getObject () {
+            return object;
+        },
     }
 }
 
