@@ -70,8 +70,6 @@ module.exports = async (sequelize, MigrationModel, migrationDir) => {
         }
     }
 
-    await sequelize.close();
-
     return ok;
 
 };
